@@ -1,0 +1,78 @@
+{
+  "brands": [
+    {
+      "id": "1",
+      "brand": "Rega"
+    },
+    {
+      "id": "2",
+      "brand": "Naim"
+    }
+  ],
+  "amplifiers": [
+    {
+      "id": "1",
+      "model": "Elex-R EDitedasXASSS",
+      "brandId": "1",
+      "categoryId": "2",
+      "useCaseId": "2",
+      "description": "This is Rega Elex R Amplifier",
+      "imageLink": "https://www.audiovideo.lt/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/i/m/img-gallery-amps-elex-r-front.jpg"
+    },
+    {
+      "id": "2",
+      "model": "Brio-R",
+      "brandId": "1",
+      "categoryId": "1",
+      "useCaseId": "1",
+      "description": "This is Rega Brio R Amplifier",
+      "imageLink": "https://www.audiovideo.lt/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/r/e/rega-brio-2016-with-remote.jpg"
+    },
+    {
+      "id": "3",
+      "model": "Nait",
+      "brandId": "2",
+      "categoryId": "1",
+      "useCaseId": "2",
+      "description": "This is Naim Nait  Amplifier",
+      "imageLink": "https://www.audiovideo.lt/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/b/4/b44ade68-35d7-4c39-934d-09a31e7cc7a9_660_620.jpg"
+    },
+    {
+      "id": "4",
+      "model": "SuperNait",
+      "brandId": "2",
+      "categoryId": "2",
+      "useCaseId": "1",
+      "description": "This is Naim SuperNait  Amplifier",
+      "imageLink": "https://www.audiovideo.lt/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/s/u/supernait2_3.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "category": "integrated"
+    },
+    {
+      "id": "2",
+      "category": "powerAmplifier"
+    },
+    {
+      "id": "8c73",
+      "category": "add"
+    }
+  ],
+  "useCases": [
+    {
+      "id": "1",
+      "useCase": "home"
+    },
+    {
+      "id": "2",
+      "useCase": "studio"
+    },
+    {
+      "id": "207d",
+      "useCase": "outside"
+    }
+  ]
+}

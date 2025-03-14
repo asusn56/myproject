@@ -1,0 +1,32 @@
+@use '../variables/variables' as *;
+
+.brand-item {
+    background-color: $color-white;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: $spacing-md;
+    width: 100%;
+    max-width: 300px;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: $spacing-sm;
+        color: $color-text;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    .controls {
+        display: flex;
+        gap: $spacing-sm;
+        margin-top: $spacing-md;
+    }
+}

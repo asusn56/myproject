@@ -1,0 +1,23 @@
+@use '../variables/variables' as *;
+
+.navigation-wrapper {
+    margin-bottom: $spacing-xl;
+    background-color: $color-primary;
+    padding: $spacing-md;
+
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        gap: $spacing-xl;
+        list-style: none;
+    }
+
+    .nav-link {
+        color: $color-white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

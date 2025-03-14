@@ -1,0 +1,38 @@
+@use '../variables/variables' as *;
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+    max-width: 600px;
+    margin: $spacing-lg auto;
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sm;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input, select, textarea {
+        padding: $spacing-sm;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+    }
+
+    button {
+        padding: $spacing-sm $spacing-md;
+        background-color: $color-primary;
+        color: $color-white;
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-secondary;
+        }
+    }
+}
