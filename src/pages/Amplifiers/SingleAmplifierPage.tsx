@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from "react-router";
-import Container from "../../components/Container";
 import { useAmplifiers } from "./AmplifierContextProvider";
-import AmplifierComponent from "../../components/amplifierComponents/AmplifierComponent";
+import AmplifierItem from "../../components/amplifierComponents/AmplifierItem";
 
 export const AmplifierPage: React.FC = () => {
     const { id } = useParams();
@@ -15,10 +14,10 @@ export const AmplifierPage: React.FC = () => {
     }
 
     return (
-        <Container>
-            <AmplifierComponent data={amplifier} />
+        <div className="amplifier-item-wrapper">
+            <AmplifierItem data={amplifier} />
             <button onClick={() => navigate("/amplifiers")}>Back to List</button>
-        </Container>
+        </div>
     );
 };
 

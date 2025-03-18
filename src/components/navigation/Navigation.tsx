@@ -9,6 +9,9 @@ const Navigation: React.FC = () => {
             <nav className="main-navigation">
                 <Container>
                     <ul className="nav-list">
+                    <li className="nav-item">
+                            <NavLink className='nav-link' to="/" end>Home</NavLink>
+                        </li>
 
                         <li className="nav-item">
                             <NavLink className='nav-link' to="/amplifiers" end>Amplifiers</NavLink>

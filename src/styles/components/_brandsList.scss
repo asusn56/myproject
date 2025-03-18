@@ -1,7 +1,6 @@
 @use '../variables/variables' as *;
-@use '../base/responsive' as r;
 
-.amplifier-list{
+.brands-list{
 
     display:flex;
     flex-direction: column;
