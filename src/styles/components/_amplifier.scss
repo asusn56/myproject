@@ -1,48 +1,55 @@
 @use '../variables/variables' as *;
 @use '../base/responsive' as r;
 
-
+.amplifier-item-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
 
 .amplifier-item {
     display: flex;
-    flex-direction: row; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: center;
+
+
     gap: $spacing-md;
     background-color: $color-white;
     border: 1px solid $border-color;
     border-radius: $border-radius;
     padding: $spacing-md;
-    width: 100%;
-    max-width: 600px;
+    width: 60%;
 
-    @include r.sm {
-        flex-direction: column-reverse; 
-        align-items: center;
-    }
+    h3 {
+        margin-bottom: $spacing-sm;
+        color: $color-text;
 
-    .amplifier-content {
-        flex: 1;
-        text-align: left; 
-    }
+        a {
+            color: inherit;
+            text-decoration: none;
 
-    .amplifier-image {
-        flex: 0 0 150px; 
-        max-width: 150px;
-        height: 150px;
-        overflow: hidden;
-        border-radius: $border-radius;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-            display: block;
+            &:hover {
+                color: $color-primary;
+            }
         }
+    }
+    
+    
+   .amplifier-image-wrapper{
+    display:flex;
+    width: 60%;
 
-        @include r.sm {
-            flex: 0 0 auto; 
-            max-width: 100%; 
-            height: auto; 
-        }
+    img{
+        width: 100%;
+    }
+   }
+
+
+    .amplifier-info {
+      
+        text-align: justify;
+        
     }
 }

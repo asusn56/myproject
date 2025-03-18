@@ -18,6 +18,7 @@ import SingleCategoryPage from './pages/categories/SingleCategoryPage'
 import './styles/main.scss' 
 import UseCasePage from './pages/useCases/UseCasePage'
 import SingleBrandPage from './pages/brands/SingleBrandPage'
+import Index from './pages/Index'
 
 createRoot(document.getElementById('root')!).render(
   
@@ -31,7 +32,7 @@ createRoot(document.getElementById('root')!).render(
             
             <Navigation/>
             <Routes>
-              <Route path="/" element={<App />} />
+              <Route path="/" element={<Index />} />
               <Route path="/amplifiers" element={<AmplifiersPage/>} />
               <Route path="/amplifiers/:id" element={<AmplifierPage/>} />
               <Route path="/createAmplifier" element={<AmplifierForm/>} />

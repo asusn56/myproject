@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from "react-router";
-import Container from "../../components/Container";
 import { useUseCases } from "./UseCasePageProvider";
-import UseCaseComponent from "../../components/useCaseComponents/UseCaseComponent";
+import UseCaseComponent from "../../components/useCaseComponents/UseCaseItem";
 
 export const UseCasePage: React.FC = () => {
     const { id } = useParams();
@@ -15,10 +14,10 @@ export const UseCasePage: React.FC = () => {
     }
 
     return (
-        <Container>
+        <div className="useCase-item-wrapper">
             <UseCaseComponent data={useCase} />
             <button onClick={() => navigate("/useCases")}>Back to List</button>
-        </Container>
+            </div>
     );
 };
 

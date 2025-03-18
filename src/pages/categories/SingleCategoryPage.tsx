@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from "react-router";
-import Container from "../../components/Container";
 import { useCategories } from "./CategoryContextProvider";
-import CategoryComponent from "../../components/categoryComponents/CategoryComponent";
+import CategoryComponent from "../../components/categoryComponents/CategoryItem";
 
 export const CategoryPage: React.FC = () => {
     const { id } = useParams();
@@ -15,10 +14,10 @@ export const CategoryPage: React.FC = () => {
     }
 
     return (
-        <Container>
-            <CategoryComponent data={category} />
+        <div className="category-item-wrapper">
+        <CategoryComponent data={category} />
             <button onClick={() => navigate("/categories")}>Back to List</button>
-        </Container>
+            </div>
     );
 };
 

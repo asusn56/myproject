@@ -9,7 +9,7 @@ const BrandsList: React.FC = () => {
   }
 
   return (
-    <div className="brand-list">
+    <div className="brands-list">
       {brandsList.map((brand) => (
         <BrandItem key={brand.id} data={brand} />
       ))}

@@ -11,7 +11,7 @@ const AmplifierList: React.FC = () => {
   }
   
   return (
-    <div className="container">
+   
     <div className="amplifier-list">
        <Link to='/createAmplifier'>Add New Amplifier</Link>
 
@@ -19,7 +19,7 @@ const AmplifierList: React.FC = () => {
         <AmplifierItem key={amplifier.id} data={amplifier} />
       ))}
     </div>
-    </div>
+    
   );
 };
 
